@@ -2,9 +2,65 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="conor.androidfileexplorer.FileExplorer">
-    <item
-        android:id="@+id/action_settings"
+
+    <item android:title="Search"
+        android:id="@+id/search"
+        android:icon="@drawable/ic_action_search"
+        android:itemBackground="@color/colorPrimaryDark"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        app:showAsAction="always"/>
+
+    <item android:title="Sort by">
+        <menu>
+            <item
+                android:id="@+id/sort_by_name"
+                android:icon="@drawable/directory_icon"
+                android:itemBackground="@color/colorPrimaryDark"
+                android:title="Name"
+                android:orderInCategory="100"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/sort_by_date_modified"
+                android:icon="@drawable/file_icon"
+                android:itemBackground="@color/colorPrimaryDark"
+                android:title="Date Modified"
+                android:orderInCategory="100"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/sort_by_type"
+                android:icon="@drawable/file_icon"
+                android:itemBackground="@color/colorPrimaryDark"
+                android:title="Type"
+                android:orderInCategory="100"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/sort_by_size"
+                android:icon="@drawable/file_icon"
+                android:itemBackground="@color/colorPrimaryDark"
+                android:title="Size"
+                android:orderInCategory="100"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+
+    <item android:title="New">
+        <menu>
+            <item
+                android:id="@+id/new_folder"
+                android:icon="@drawable/directory_icon"
+                android:itemBackground="@color/colorPrimaryDark"
+                android:title="Folder"
+                android:orderInCategory="100"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/new_file"
+                android:icon="@drawable/file_icon"
+                android:itemBackground="@color/colorPrimaryDark"
+                android:title="File"
+                android:orderInCategory="100"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
 </menu>
